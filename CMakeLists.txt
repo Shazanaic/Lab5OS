@@ -12,7 +12,7 @@ endif()
 project ("Lab5OS")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (Lab5OS "Lab5OS.cpp" "Lab5OS.h" "Common/Employee.h" "Common/Employee.h" "Common/Protocol.h")
+add_executable (Lab5OS "Lab5OS.cpp" "Lab5OS.h" "Common/Employee.h" "Common/Employee.h" "Common/Protocol.h" "Server/FileStorage.h" "Server/FileStorage.cpp" "Server/RecordLockManager.h" "Server/RecordLockManager.cpp" "Server/PipeServer.h" "Server/PipeServer.cpp" "Server/Server.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET Lab5OS PROPERTY CXX_STANDARD 20)
